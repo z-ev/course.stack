@@ -1,3 +1,4 @@
+---
 name: static analysis
 on:
   push:
@@ -18,3 +19,4 @@ jobs:
         uses: docker://jakzal/phpqa:php8.0-alpine
         with:
           args: phpcs -s --extensions=php --standard=PSR12 --report=junit -n app/
+...
