@@ -1,12 +1,10 @@
 ---
 name: create package
 on:
-  push:
-    branches:
-      - main
+  pull_request:
+    branches: [ main ]
     tags:
       - v*
-  pull_request:
 env:
   IMAGE_NAME: stack
 jobs:
